@@ -1,0 +1,9 @@
+<resources>
+    <string name="appName">BitcoinWatchWallet</string>
+    <string name="refreshButtonText">Refresh</string>
+
+    <string name="balance">0.58960057</string>
+    <string name="publicKey">1djad595swdfec5wsd5s562</string>
+
+
+</resources>

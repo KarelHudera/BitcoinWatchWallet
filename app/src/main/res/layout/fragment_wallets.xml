@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="@dimen/fragmentWalletsMargin2x">
+
+    <TextView
+        android:id="@+id/textViewLilHeader"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="@dimen/fragmentWalletsMargin2x"
+        android:textSize="@dimen/bigText"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Balance" />
+
+    <TextView
+        android:id="@+id/textViewBalance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/bigText"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/fragmentWalletsMargin"
+        app:layout_constraintStart_toEndOf="@id/textViewLilHeader"
+        app:layout_constraintTop_toTopOf="@id/textViewLilHeader"
+        tools:text="@string/balance" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerAddresses"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/fragmentWalletsMargin2x"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/fragmentWalletsMargin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewBalance"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_action_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        app:srcCompat="@android:drawable/ic_input_add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <include layout="@layout/layout_error_loading" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

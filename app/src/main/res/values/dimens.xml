@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="itemTransactionPadding">8dp</dimen>
+    <dimen name="cornerRadius">8dp</dimen>
+    <dimen name="cardElevation">0dp</dimen>
+    //Texts
+    <dimen name="bigText">24sp</dimen>
+    <dimen name="samallText">16sp</dimen>
+
+    <dimen name="itemWalletPadding">8dp</dimen>
+    <dimen name="itemTransactionPadding2x">16dp</dimen>
+
+    <dimen name="fragmentWalletsMargin">8dp</dimen>
+    <dimen name="fragmentWalletsMargin2x">16dp</dimen>
+
+    <dimen name="fragmentTransactionMargin">8dp</dimen>
+    <dimen name="fragmentTransactionMargin2x">16dp</dimen>
+
+
+</resources>

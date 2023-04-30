@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/walletsFragment">
+
+    <fragment
+        android:id="@+id/walletsFragment"
+        android:name="com.example.bitcoinwatchwallet.wallets.WalletsFragment"
+        android:label="WalletsFragment"
+        tools:layout="@layout/fragment_wallets">
+        <action
+            android:id="@+id/action_to_addressImputBottomSheetDialog"
+            app:destination="@id/addressImputBottomSheetDialog" />
+        <action
+            android:id="@+id/action_to_singleTransactionsFragment"
+            app:destination="@id/singleTransactionsFragment" />
+
+    </fragment>
+    <dialog
+        android:id="@+id/addressImputBottomSheetDialog"
+        android:name="com.example.bitcoinwatchwallet.addressInputDialog.AddressInputDialog"
+        android:label="AddressImputBottomSheetDialog"
+        tools:layout="@layout/dialog_address_input"/>
+    <fragment
+        android:id="@+id/transactions"
+        android:name="com.example.bitcoinwatchwallet.transactions.Transactions"
+        android:label="Transactions"
+        tools:layout="@layout/fragment_transactions">
+    </fragment>
+    <fragment
+        android:id="@+id/singleTransactionsFragment"
+        android:name="com.example.bitcoinwatchwallet.singleTransactions.SingleTransactionsFragment"
+        android:label="SingleTransactionsFragment"
+        tools:layout="@layout/fragment_single_transactions">
+        <argument
+            android:name="addressId"
+            app:argType="string" />
+    </fragment>
+
+</navigation>
